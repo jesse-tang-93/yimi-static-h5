@@ -324,7 +324,7 @@ footer{
         font-size: 18px;
         border-radius: 4px;
         background-color: #ff3d1d;
-        margin-left: 82px;
+        margin-left: 60px;
       }
       .layui-input{
         display: inline-block;
@@ -341,11 +341,11 @@ footer{
 }
 //layout
 .left-box{
-  padding: 0 0 0 30px;
+  padding-left: 30px;
 }
 .project-content.layui-col-md7 {
   padding-left: 30px;
-  padding-right: 5px;
+  padding-right: 46px;
 }
 @media screen and (min-width: 992px){
   .big-content .layui-col-md9 {
@@ -361,6 +361,7 @@ footer{
     width: 58%;
   }
 }
+
 //new-news submit-box
 .new-news.submit-box{
   border:1px solid #3f77d5;
@@ -539,37 +540,6 @@ footer{
   }
 }
 //project-item
-.project-item.end{
-  .project-img{
-    overflow: hidden;
-    &:after{
-      top: -10px;
-      content: "结束";
-      display: block;
-      color: #7e7e7e;
-      height: 60px;
-      width: 120px;
-      position: absolute;
-      right: -40px;
-      text-align: center;
-      line-height: 70px;
-      background-color: #d1d1d1;
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      font-size: 16px;
-      font-weight: bold;
-    }
-  }
-  .project-content div.btn-to-link-box{
-    .to-sub.layui-btn{
-      background-color: #d1d1d1;
-      color: #999999;
-    }
-  }
-}
 .project-item{
   padding: 20px;
   font-size: 0;
@@ -582,9 +552,8 @@ footer{
   }
   .project-img{
     height: 181px;
-    background: url("../img/success-01.jpg")0 0 no-repeat;
+    background: url("../img/img-01.jpg")0 0 no-repeat;
     position: relative;
-
     div{
       position: absolute;
       top:0;
@@ -607,22 +576,12 @@ footer{
     display: inline-block;
   }
   .project-content{
-    .page-time-box{
-      margin-bottom: 10px
-    }
-    .page-time{
-      font-size: 14px;
-      color: #666;
-      line-height: 24px;
-      display: inline-block;
-      margin-left: 10px;
-    }
     .project-content-title{
       font-size: 18px;
       font-weight: bold;
       color: #333;
-      margin-top: 5px;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 30px;
       display: inline-block;
       &:hover{
         color: #ff3d1d;
@@ -635,32 +594,15 @@ footer{
       overflow : hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
     }
-    div.btn-to-link-box{
-      margin-top: 12px;
-      a.to-info{
-        display: inline-block;
-        text-align: left;
-        color: #ff3d1d;
-        font-size: 16px;
-      }
-      a.to-sub{
-        display: inline-block;
-        text-align: right;
-        font-size: 16px;
-        float: right;
-        background-color: #ff3d1d;
-        border-radius: 4px;
-        width: 101px;
-        height: 28px;
-        line-height: 28px;
-        position: relative;
-        top:-2px;
-      }
+    a.to-info{
+      display: block;
+      text-align: right;
+      color: #ff3d1d;
+      font-size: 16px;
     }
-
   }
 }
 //
@@ -668,7 +610,7 @@ footer{
   .top-title{
     font-size: 20px;
     line-height: 24px;
-    color: #333;
+    color: #ff3d1d;
     border-bottom: 1px solid #ff3d1d;
     padding-bottom: 10px;
     margin-bottom: 30px;
@@ -683,6 +625,104 @@ footer{
   margin-bottom: 25px;
   .layui-laypage a, .layui-laypage span {
     color: #ff3d1d;
+  }
+}
+//form box
+.big-content .from-box{
+  background: url("../img/form-box-bg.jpg")0 0 no-repeat;
+  height: 407px;
+  margin-top: 30px;
+  &:before{
+    content:"";
+    display:table;
+  }
+  button.layui-btn{
+    display: block;
+    margin: 30px auto 35px;
+    text-align: center;
+    border-radius: 4px;
+    width: 374px;
+    height: 51px;
+    line-height: 51px;
+    background-color: #ff3d1d;
+    font-size: 24px;
+  }
+  form{
+    padding: 0 80px;
+    .layui-form-select dl dd.layui-this{
+      background-color:#ff3d1d;
+    }
+    .layui-form-item{
+      margin-bottom: 20px;
+    }
+    button.sub-btn{
+      width: 230px;
+      height: 44px;
+      line-height: 44px;
+      font-size: 24px;
+      background-color: #ff3d1d;
+      border-radius: 4px;
+      color: #fff;
+      outline: none;
+      display: block;
+      margin: 30px auto 0;
+      border: none;
+      cursor: pointer;
+    }
+    .layui-form-label{
+      color: #fff;
+      font-size: 18px;
+      width: 90px;
+      padding: 8px 15px;
+    }
+    .layui-textarea{
+      width: 96%;
+      min-height: 72px;
+      resize: none;
+    }
+    .layui-input{
+      height: 36px;
+    }
+    .layui-input, .layui-select, .layui-textarea{
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+}
+.search_input::-webkit-input-placeholder{
+  color:#fff;
+}
+.search_input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:#fff;
+}
+.search_input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:#fff;
+}
+.search_input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+  color:#fff;
+}
+//house-info-box
+.house-info-title{
+  font-size: 20px;
+  margin: 20px 0;
+  color: #ff3d1d;
+  font-weight: bold;
+}
+.house-info-content{
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+}
+.house-info-box{
+  padding: 30px 50px;
+  p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 24px;
+    .house-money{
+      color: #ff3d1d;
+    }
   }
 }
 //auto 768 and 1024px
@@ -733,223 +773,198 @@ footer{
     margin-bottom: 15px;
   }
 }
-.jnd-info{
-  padding: 20px 30px;
-  background-color: #f5f5f5;
-  margin-bottom: 30px;
-  .title{
-    font-size: 16px;
-    color: #ff3d1d;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .jnd-text{
-    color: #7b7b7b;
-    font-size: 14px;
-    line-height: 20px;
-    text-indent: 32px;
-  }
+.layui-carousel-ind li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #fff;
 }
-.time-box-container{
-  margin: 0 auto;
-  padding-left: 30px;
-  &:after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  li.end{
-    &:after{
-      content: "";
-      display: block;
-      width:18px ;
-      height: 18px;
-      border-radius: 50%;
-      background-color: #f63a3a;
-      position: absolute;
-      right: -8px;
-      z-index: 9;
-      top: -1px;
-    }
-  }
-  li{
-    float: left;
-    width: 154px;
-    position: relative;
-    height: 16px;
-    background-color: #b9b9b9;
-    z-index:1;
-    text-align: center;
-    .time-content{
-      position: absolute;
-      top:-25px;
-      font-size: 16px;
-      color: #333;
-      line-height: 24px;
-      width: 100%;
-      text-align: center;
-    }
-    .time-coast{
-      position: absolute;
-      bottom:-25px;
-      font-size: 18px;
-      color: #1533b3;
-      width: 100%;
-      text-align: center;
-      font-weight: bold;
-    }
-    &:before{
-      content: "";
-      display: block;
-      width:18px ;
-      height: 18px;
-      border-radius: 50%;
-      background-color: #f63a3a;
-      position: absolute;
-      left: -8px;
-      z-index: 9;
-      top: -1px;
-    }
-  }
-
+.layui-carousel-ind li.layui-this {
+  background-color: #ff3d1d;
 }
-.time-box {
-  height: 122px;
-  padding-top: 50px;
-  background-color: #f5f5f5;
+.layui-carousel-ind ul {
+  background-color: transparent;
+}
+.layui-carousel a img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 470px;
+}
+//about  us
+.layui-tab-title li.end:after {
+  display: none;
+}
+.layui-tab-title .layui-this:after {
+  height: 46px;
+}
+.layui-tab-brief>.layui-tab-title .layui-this {
+  color: #fff;
+  background-color: #ff3d1d;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+  border-right: 1px solid #fff;
+  border-bottom: none;
+  height: 40px;
+  top: 2.5px;
+}
+.layui-tab-title li:after{
+  position: absolute;
+  left: 0;
+  top: 2.5px;
+  content: '';
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
   box-sizing: border-box;
+  pointer-events: none;
+  border-right:1px solid #fff;
+}
+.layui-tab-title li {
+  width: 240px;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+  line-height: 45px;
+  background-color: rgba(255,255,255,.4);
+}
+.layui-tab-title {
+  top: -75px;
+  width: 1200px;
+  position: absolute;
+  left: 0;
+  height: 45px;
+}
+.layui-tab{
+  margin: 0;
+}
+.layui-tab-content {
+  padding: 0;
+}
+.us-text{
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+  font-family: SimSun-ExtB;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-.lc-content{
-  margin-bottom: 30px;
-  &:after{
-    content: "";
-    display: block;
-    clear: both;
+.ln-btn{
+  height: 39px;
+  line-height: 39px;
+  border-radius: 4px;
+  background-color: #ff3d1d;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.us-ln {
+  margin-top: 50px;
+  text-align: center;
+  span{
+    display: inline-block;
+    margin-right: 80px;
+    font-size: 24px;
+    color: #666;
+    line-height: 24px;
   }
-  li{
-    width: 159px;
-    height: 162px;
-    float: left;
-    margin-right: 10px;
-    border: 1px solid #c1c1c1;
-    position: relative;
-    transition: all .5s;
+}
+.timebox {
+  padding-left: 0;
+  background-color: #dfdfdf;
+}
+.timebox-item{
+  position: relative;
+  overflow: hidden;
+}
+span.year-list {
+  float: left;
+  display: block;
+  background-color: #a0a0a0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 36px;
+  line-height: 40px;
+}
+.content-text {
+  float: left;
+  padding-left: 20px;
+  padding-top: 18px;
+  font-size: 14px;
+}
 
-    &:hover{
-      background-color: #4468dd;
-      transition: all .5s;
+.address-item{
+  .address-item-img{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    vertical-align: middle;
+    img{
+      width: 48px;
     }
-    &:hover .lc-title{
-      color: #fff;
-    }
-    &:hover .lc-text{
-      color: #fff;
-    }
-    .lc-step{
-      position: absolute;
-      width:25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: #0061bc;
-      top:-12px;
-      left: 50%;
-      text-align: center;
-      color: #fff;
+  }
+  .address-item-text{
+    display: inline-block;
+    float: left;
+    width: 80%;
+    vertical-align: middle;
+    span{
       font-size: 16px;
-      line-height: 25px;
-      transform:translateX(-50%);
+      line-height: 24px;
+      color: #333;
     }
-    .lc-title{
-      text-align: center;
-      display: block;
-      margin:40px auto 25px auto;
-      font-size: 16px;
-    }
-    .lc-text{
+    p{
       font-size: 14px;
-      display: block;
-      text-align: center;
-      padding: 0 15px;
+      line-height: 18px;
       color: #666;
     }
   }
 }
-.layui-tab-title li {
-  width: 18.911%;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-  transition: all .2s;
-  -webkit-transition: all .2s;
-  position: relative;
+.zp-box{
+  border:1px solid #dbdbdb;
+  padding: 26px 50px;
+  margin-bottom: 30px;
+  ul li{
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+  }
+}
+button.zp-title {
+  background-color: red;
+  height: 40px;
   line-height: 40px;
-  min-width: 65px;
-  padding: 0 15px;
-  text-align: center;
-  cursor: pointer;
-  background-color: #dbdbdb;
-  margin-right: 12px;
-  &:hover{
-    color: #fff;
-    background-color: #4468dd;
-  }
-}
-.layui-tab-title li.end {
-  margin-right: 0;
-}
-.layui-tab-bar{
-  display:none;
-}
-.layui-tab-brief>.layui-tab-title .layui-this {
+  padding: 0 25px;
+  border-radius: 4px;
+  border: none;
   color: #fff;
-  background-color: #4468dd;
+  margin-bottom: 25px;
 }
-.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
-  border: none;
-  border-radius: 0;
-  border-bottom: 2px solid #4468dd;
-}
-.layui-tab[overflow]>.layui-tab-title {
-  overflow: hidden;
-  border: none;
-}
-.layui-tab {
-  border: 1px solid #cccccc;
-}
-.cl-title{
-  position: relative;
-  display: block;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px;
-  &:before{
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #f63a3a;
-    position: absolute;
-    left: -18px;
-    border-radius: 50%;
-    bottom: 5px;
+.zp-box-item {
+  .titles{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
   }
 }
-.cl-content{
-  font-size: 14px;
-  color: #666;
-  line-height: 20px;
-  margin-bottom: 15px;
-}
-.layui-tab-item {
-  padding: 20px 30px;
-}
-.ouzhou.jnd-info .jnd-text{
-  color: #7b7b7b;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 25px;
-  text-indent: 32px;
+.other-box{
+  border: 1px solid #dbdbdb;
+  .position-box{
+    padding-left: 80px;
+    padding-right: 150px;
+  }
+  .position-title{
+    font-size: 18px;
+    color: #333;
+    line-height: 24px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .position-item{
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+  }
 }

@@ -268,7 +268,7 @@ footer {
         font-size: 18px;
         border-radius: 4px;
         background-color: #ff3d1d;
-        margin-left: 82px; }
+        margin-left: 60px; }
       .big-content .qianzhen-sub .layui-form .layui-input {
         display: inline-block;
         width: 75%;
@@ -279,11 +279,10 @@ footer {
         color: #fb2525; }
 
 .left-box {
-  padding: 0 0 0 30px; }
+  padding-left: 30px; }
 
 .project-content.layui-col-md7 {
-  padding-left: 30px;
-  padding-right: 5px; }
+  padding-left: 30px; }
 
 @media screen and (min-width: 992px) {
   .big-content .layui-col-md9 {
@@ -444,31 +443,6 @@ footer {
     display: block;
     margin: 0 auto; }
 
-.project-item.end .project-img {
-  overflow: hidden; }
-  .project-item.end .project-img:after {
-    top: -10px;
-    content: "结束";
-    display: block;
-    color: #7e7e7e;
-    height: 60px;
-    width: 120px;
-    position: absolute;
-    right: -40px;
-    text-align: center;
-    line-height: 70px;
-    background-color: #d1d1d1;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    font-size: 16px;
-    font-weight: bold; }
-.project-item.end .project-content div.btn-to-link-box .to-sub.layui-btn {
-  background-color: #d1d1d1;
-  color: #999999; }
-
 .project-item {
   padding: 20px;
   font-size: 0;
@@ -480,7 +454,6 @@ footer {
     border-radius: 2px; }
   .project-item .project-img {
     height: 181px;
-    background: url("../img/success-01.jpg") 0 0 no-repeat;
     position: relative; }
     .project-item .project-img div {
       position: absolute;
@@ -499,56 +472,38 @@ footer {
       padding-left: 6px; }
   .project-item .project-img, .project-item .project-content {
     display: inline-block; }
-  .project-item .project-content .page-time-box {
-    margin-bottom: 10px; }
-  .project-item .project-content .page-time {
-    font-size: 14px;
-    color: #666;
-    line-height: 24px;
-    display: inline-block;
-    margin-left: 10px; }
   .project-item .project-content .project-content-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: inline-block; }
     .project-item .project-content .project-content-title:hover {
       color: #ff3d1d; }
   .project-item .project-content .project-text {
     font-size: 16px;
     color: #666;
-    line-height: 24px;
+    line-height: 26px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical; }
-  .project-item .project-content div.btn-to-link-box {
-    margin-top: 12px; }
-    .project-item .project-content div.btn-to-link-box a.to-info {
-      display: inline-block;
-      text-align: left;
-      color: #ff3d1d;
-      font-size: 16px; }
-    .project-item .project-content div.btn-to-link-box a.to-sub {
-      display: inline-block;
-      text-align: right;
-      font-size: 16px;
-      float: right;
-      background-color: #ff3d1d;
-      border-radius: 4px;
-      width: 101px;
-      height: 28px;
-      line-height: 28px;
-      position: relative;
-      top: -2px; }
+    .project-item .project-content .project-text li .house-m {
+      color: #ff3d1d; }
+  .project-item .project-content a.to-info {
+    display: block;
+    text-align: right;
+    color: #ff3d1d;
+    font-size: 16px; }
+
+.iconfont {
+  margin-right: 10px; }
 
 .edit-content .top-title {
   font-size: 20px;
   line-height: 24px;
-  color: #333;
+  color: #fa6e21;
   border-bottom: 1px solid #ff3d1d;
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -604,202 +559,5 @@ footer {
     width: 58%;
     margin-right: 0;
     margin-bottom: 15px; } }
-.jnd-info {
-  padding: 20px 30px;
-  background-color: #f5f5f5;
-  margin-bottom: 30px; }
-  .jnd-info .title {
-    font-size: 16px;
-    color: #ff3d1d;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 20px; }
-  .jnd-info .jnd-text {
-    color: #7b7b7b;
-    font-size: 14px;
-    line-height: 20px;
-    text-indent: 32px; }
 
-.time-box-container {
-  margin: 0 auto;
-  padding-left: 30px; }
-  .time-box-container:after {
-    content: "";
-    display: block;
-    clear: both; }
-  .time-box-container li.end:after {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: #f63a3a;
-    position: absolute;
-    right: -8px;
-    z-index: 9;
-    top: -1px; }
-  .time-box-container li {
-    float: left;
-    width: 154px;
-    position: relative;
-    height: 16px;
-    background-color: #b9b9b9;
-    z-index: 1;
-    text-align: center; }
-    .time-box-container li .time-content {
-      position: absolute;
-      top: -25px;
-      font-size: 16px;
-      color: #333;
-      line-height: 24px;
-      width: 100%;
-      text-align: center; }
-    .time-box-container li .time-coast {
-      position: absolute;
-      bottom: -25px;
-      font-size: 18px;
-      color: #1533b3;
-      width: 100%;
-      text-align: center;
-      font-weight: bold; }
-    .time-box-container li:before {
-      content: "";
-      display: block;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background-color: #f63a3a;
-      position: absolute;
-      left: -8px;
-      z-index: 9;
-      top: -1px; }
-
-.time-box {
-  height: 122px;
-  padding-top: 50px;
-  background-color: #f5f5f5;
-  box-sizing: border-box;
-  margin-bottom: 30px; }
-
-.lc-content {
-  margin-bottom: 30px; }
-  .lc-content:after {
-    content: "";
-    display: block;
-    clear: both; }
-  .lc-content li {
-    width: 159px;
-    height: 162px;
-    float: left;
-    margin-right: 10px;
-    border: 1px solid #c1c1c1;
-    position: relative;
-    transition: all .5s; }
-    .lc-content li:hover {
-      background-color: #4468dd;
-      transition: all .5s; }
-    .lc-content li:hover .lc-title {
-      color: #fff; }
-    .lc-content li:hover .lc-text {
-      color: #fff; }
-    .lc-content li .lc-step {
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: #0061bc;
-      top: -12px;
-      left: 50%;
-      text-align: center;
-      color: #fff;
-      font-size: 16px;
-      line-height: 25px;
-      transform: translateX(-50%); }
-    .lc-content li .lc-title {
-      text-align: center;
-      display: block;
-      margin: 40px auto 25px auto;
-      font-size: 16px; }
-    .lc-content li .lc-text {
-      font-size: 14px;
-      display: block;
-      text-align: center;
-      padding: 0 15px;
-      color: #666; }
-
-.layui-tab-title li {
-  width: 18.911%;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-  transition: all .2s;
-  -webkit-transition: all .2s;
-  position: relative;
-  line-height: 40px;
-  min-width: 65px;
-  padding: 0 15px;
-  text-align: center;
-  cursor: pointer;
-  background-color: #dbdbdb;
-  margin-right: 12px; }
-  .layui-tab-title li:hover {
-    color: #fff;
-    background-color: #4468dd; }
-
-.layui-tab-title li.end {
-  margin-right: 0; }
-
-.layui-tab-bar {
-  display: none; }
-
-.layui-tab-brief > .layui-tab-title .layui-this {
-  color: #fff;
-  background-color: #4468dd; }
-
-.layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-tab-brief > .layui-tab-title .layui-this:after {
-  border: none;
-  border-radius: 0;
-  border-bottom: 2px solid #4468dd; }
-
-.layui-tab[overflow] > .layui-tab-title {
-  overflow: hidden;
-  border: none; }
-
-.layui-tab {
-  border: 1px solid #cccccc; }
-
-.cl-title {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px; }
-  .cl-title:before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #f63a3a;
-    position: absolute;
-    left: -18px;
-    border-radius: 50%;
-    bottom: 5px; }
-
-.cl-content {
-  font-size: 14px;
-  color: #666;
-  line-height: 20px;
-  margin-bottom: 15px; }
-
-.layui-tab-item {
-  padding: 20px 30px; }
-
-.ouzhou.jnd-info .jnd-text {
-  color: #7b7b7b;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 25px;
-  text-indent: 32px; }
-
-/*# sourceMappingURL=qz-jnd.css.map */
+/*# sourceMappingURL=house-case-list.css.map */
