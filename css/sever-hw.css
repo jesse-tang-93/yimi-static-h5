@@ -638,7 +638,7 @@ nav {
       color: #da0120 !important; }
   .link-friends .to-friend {
     max-width: 1200px;
-    margin: 30px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 20px 0 25px; }
     .link-friends .to-friend .footer-title {
       font-size: 18px;
@@ -876,4 +876,88 @@ footer {
 .menu-list a:hover {
   background-color: rgba(255, 255, 255, 0.5); }
 
-/*# sourceMappingURL=active-info.css.map */
+.sever-banner {
+  height: 330px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .sever-banner img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+
+.big-content {
+  background: url("../img/sever-usa-bg.png") 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 118px; }
+
+.sever-content {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .sever-content:after {
+    content: "";
+    display: table-cell; }
+  .sever-content:before {
+    content: "";
+    display: table-cell; }
+  .sever-content .title {
+    font-size: 24px;
+    color: #030c55;
+    font-weight: bold;
+    margin: 0 0 40px; }
+  .sever-content .title-btn {
+    background-color: #5c7ff2;
+    height: 46px;
+    line-height: 46px;
+    font-size: 20px;
+    width: 374px;
+    margin-bottom: 35px;
+    border-radius: 4px; }
+  .sever-content .sever-text-box .sever-text-item span {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #eb6100;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 25px; }
+  .sever-content .sever-text-box .sever-text-item {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px; }
+  .sever-content .sever-item-box {
+    height: 500px;
+    background: url("../img/sever-kaung.png") 0 0 no-repeat;
+    background-size: contain;
+    padding: 30px; }
+    .sever-content .sever-item-box .sever-item {
+      padding: 30px 20px 20px;
+      text-align: center; }
+      .sever-content .sever-item-box .sever-item .layui-btn {
+        font-size: 21px;
+        height: 64px;
+        line-height: 64px;
+        width: 315px;
+        border-radius: 4px;
+        background-color: #f00202;
+        margin-bottom: 15px; }
+      .sever-content .sever-item-box .sever-item img {
+        max-width: 100%; }
+
+.layui-carousel {
+  margin-bottom: 0; }
+
+ul.sever-text-box {
+  margin-bottom: 47px; }
+
+.sever-img-box {
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-top: 10px; }
+  .sever-img-box .layui-col-md4 {
+    text-align: center;
+    margin-bottom: 25px; }
+
+/*# sourceMappingURL=sever-hw.css.map */
