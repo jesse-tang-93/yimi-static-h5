@@ -828,5 +828,21 @@ footer {
     width: 58%;
     margin-right: 0;
     margin-bottom: 15px; } }
+.hover-style {
+  display: none;
+  transition: all .5s;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -20px;
+  background-color: #fff; }
+
+.house-content .team-item:hover .hover-style {
+  display: block;
+  bottom: 20px;
+  transition: all .5s; }
+.house-content .team-item:hover .project-text-box {
+  display: none;
+  transition: all .5s; }
 
 /*# sourceMappingURL=aozhou.css.map */

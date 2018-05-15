@@ -756,5 +756,17 @@ footer {
 
   .active-img {
     display: none; } }
+.menu-list a:hover {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.menu-list-box li a:hover {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+nav .menu-box li dl.menu-list-box li {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+  line-height: normal; }
 
 /*# sourceMappingURL=index.css.map */

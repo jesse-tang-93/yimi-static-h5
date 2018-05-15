@@ -1063,7 +1063,7 @@ footer{
   }
 }
 .sever-banner{
-  height: 330px;
+  height: 272px;
   max-width: 1200px;
   margin: 0 auto;
   img{
@@ -1159,5 +1159,56 @@ ul.sever-text-box {
   .layui-col-md4{
      text-align: center;
     margin-bottom: 25px;
+  }
+}
+.japen-box{
+  img.title{
+    display: block;
+    margin: 0 auto;
+  }
+  .japen-tj-text{
+    padding: 0 230px;
+    font-size: 16px;
+    color: #1a1a1a;
+    line-height: 24px;
+  }
+}
+.japen-content{
+  img{
+    max-width: 100%;
+  }
+}
+.title-2{
+  margin: 70px auto 50px;
+  max-width: 1200px;
+  text-align: center;
+  img{
+    max-width: 100%;
+  }
+  .title2{
+    margin-top: 50px;
+  }
+  .title3{
+    margin-top: 40px;
+    position: relative;
+    left: -30px;
+  }
+}
+.menu-list-box li a:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+nav .menu-box li dl.menu-list-box li {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+  line-height: normal;
+}
+.stem-box{
+  max-width: 1920px;
+  img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 }
